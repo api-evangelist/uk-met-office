@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/MetOffice
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (metoffice.gov.uk,
+  security/uk-met-office-domain-security.yml, security/uk-met-office-vulnerability-disclosure.yml) or its accepted GitHub org (MetOffice).'
+packages:
+- name: shumlib
+  registry: github
+  url: https://github.com/MetOffice/shumlib
+  language: Fortran
+  official: true
+  version: null
+  published: '2026-07-22'
+  source_repo: https://github.com/MetOffice/shumlib
+  evidence: repository in github.com/MetOffice, whose profile names the provider's domain

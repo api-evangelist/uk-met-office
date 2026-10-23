@@ -1,0 +1,137 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 8
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - docs
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: api.gov.uk
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.gov.uk
+  role: api
+  relation: other-domain
+- host: careers.metoffice.gov.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: metoffice.gov.uk
+  role: other
+  relation: own
+- host: college.metoffice.gov.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: metoffice.gov.uk
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: library.metoffice.gov.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: metoffice.gov.uk
+  role: other
+  relation: own
+- host: reference.metoffice.gov.uk
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types:
+  - Support
+  serves:
+  - docs
+  registrable_domain: metoffice.gov.uk
+  role: support
+  relation: own
+- host: vcn.metoffice.gov.uk
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: metoffice.gov.uk
+  role: other
+  relation: own
+- host: weather.metoffice.gov.uk
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types:
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: metoffice.gov.uk
+  role: docs
+  relation: own
+- host: wow.metoffice.gov.uk
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: metoffice.gov.uk
+  role: other
+  relation: own
+- host: www.metoffice.gov.uk
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - TermsOfService
+  - SignUp
+  - PrivacyPolicy
+  - Pricing
+  - Newsroom
+  - Blog
+  - Website
+  serves:
+  - cdn
+  vendor: akamai
+  registrable_domain: metoffice.gov.uk
+  role: website
+  relation: own

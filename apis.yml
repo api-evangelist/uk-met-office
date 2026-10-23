@@ -1,23 +1,97 @@
 aid: uk-met-office
+
 name: UK Met Office
-description: 'UK Met Office is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.metoffice.gov.uk/api/images/file/LoughriggFellLakeDistrictjpg-1280x503.jpg
+
+description: 'The UK Met Office is the United Kingdom’s national weather service, providing weather and climate data, forecasts, warnings and scientific research. It offers public weather services, data APIs, and expertise to support businesses, government and the public in understanding and responding to weather and climate change impacts.'
+
 url: https://raw.githubusercontent.com/api-evangelist/uk-met-office/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Weather
+- Climate
+- Data
+- Forecast
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://www.metoffice.gov.uk/about-us/legal/vulnerability-disclosure-policy
+- type: SecurityTxt
+  url: well-known/uk-met-office-security.txt
+- type: SecurityTxt
+  url: well-known/uk-met-office-college-security.txt
+- type: WellKnown
+  url: well-known/uk-met-office-well-known.yml
+- type: Hosts
+  url: hosts/uk-met-office-hosts.yml
+- type: Vendors
+  url: vendors/uk-met-office-vendors.yml
+- type: SDKs
+  url: packages/uk-met-office-packages.yml
+- type: Packages
+  url: packages/uk-met-office-packages.yml
+- type: TermsOfService
+  url: https://www.metoffice.gov.uk/about-us/governance/public-weather-service/customer-group/terms-of-reference
+- type: Support
+  url: https://reference.metoffice.gov.uk/ui/help
+- type: SignUp
+  url: https://www.metoffice.gov.uk/policies/registered-content
+- type: PrivacyPolicy
+  url: https://www.metoffice.gov.uk/policies/privacy
+- type: Pricing
+  url: https://www.metoffice.gov.uk/policies/pricing-policy
+- type: Newsroom
+  url: https://www.metoffice.gov.uk/research/news
+- type: Documentation
+  url: https://weather.metoffice.gov.uk/guides/rss
+- type: Blog
+  url: https://www.metoffice.gov.uk/blog
+- type: GitHubOrganization
+  url: https://github.com/MetOffice
+- type: VulnerabilityDisclosure
+  url: security/uk-met-office-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/uk-met-office-domain-security.yml
 - type: Website
-  url: http://www.metoffice.gov.uk/
+  url: https://www.metoffice.gov.uk/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: http://www.metoffice.gov.uk/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

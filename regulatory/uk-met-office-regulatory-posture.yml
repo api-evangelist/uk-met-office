@@ -1,0 +1,32 @@
+generated: '2026-10-23'
+method: searched
+source:
+  - https://www.metoffice.gov.uk/policies/privacy
+signals:
+  - quote: "If you have any concerns about how we use your personal data, you can raise a complaint with us at any time."
+    url: https://www.metoffice.gov.uk/policies/privacy
+    section: "How to make a complaint"
+    note: "Provides a data subject right to lodge a complaint, indicating a process for data subject requests."
+    evidence:
+      - source: https://www.metoffice.gov.uk/policies/privacy
+        http_status: 200
+        fetched: true
+        quote: "If you have any concerns about how we use your personal data, you can raise a complaint with us at any time."
+  - quote: "You have the right to raise the matter with the Information Commissioner’s Office (ICO), the UK regulator for data protection."
+    url: https://www.metoffice.gov.uk/policies/privacy
+    section: "Escalating your complaint"
+    note: "Specifies the external supervisory authority for data protection, confirming compliance framework."
+    evidence:
+      - source: https://www.metoffice.gov.uk/policies/privacy
+        http_status: 200
+        fetched: true
+        quote: "You have the right to raise the matter with the Information Commissioner’s Office (ICO), the UK regulator for data protection."
+  - quote: "The Data Controller is the Met Office, FitzRoy Road, Exeter, Devon, EX1 3PB on behalf of the Department for Business, Innovation, Science and Trade of the United Kingdom of Great Britain and Northern Ireland (BIST)."
+    url: https://www.metoffice.gov.uk/policies/privacy
+    section: "Data Controller"
+    note: "Identifies the data controller, a required regulatory disclosure."
+    evidence:
+      - source: https://www.metoffice.gov.uk/policies/privacy
+        http_status: 200
+        fetched: true
+        quote: "The Data Controller is the Met Office, FitzRoy Road, Exeter, Devon, EX1 3PB on behalf of the Department for Business, Innovation, Science and Trade of the United Kingdom of Great Britain and Northern Ireland (BIST)."
